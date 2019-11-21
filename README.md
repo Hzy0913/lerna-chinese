@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  A tool for managing JavaScript projects with multiple packages.
+   一个管理使用多个包的JavaScript项目工具
 </p>
 
 <p align="center">
@@ -35,17 +35,12 @@
 - [Global Flags](./core/global-options)
 - [Filter Flags](./core/filter-options)
 
-## About
+## 关于
 
-Splitting up large codebases into separate independently versioned packages
-is extremely useful for code sharing. However, making changes across many
-repositories is _messy_ and difficult to track, and testing across repositories
-gets complicated really fast.
-
-To solve these (and many other) problems, some projects will organize their
-codebases into multi-package repositories (sometimes called [monorepos](https://github.com/babel/babel/blob/master/doc/design/monorepo.md)). Projects like [Babel](https://github.com/babel/babel/tree/master/packages), [React](https://github.com/facebook/react/tree/master/packages), [Angular](https://github.com/angular/angular/tree/master/modules),
-[Ember](https://github.com/emberjs/ember.js/tree/master/packages), [Meteor](https://github.com/meteor/meteor/tree/devel/packages), [Jest](https://github.com/facebook/jest/tree/master/packages), and many others develop all of their packages within a
-single repository.
+拆分大型代码库为单独的独立版本包对于代码共享非常有用。然而，跨多个仓库进行修改变更是混乱且难以跟踪的，跨仓库的调试也变得非常复杂。 
+ 
+为了解决这些 (和其他一些) 问题，一些项目将他们的代码库组织为multi-package仓库形式 (也称为 [monorepos](https://github.com/babel/babel/blob/master/doc/design/monorepo.md))。这些项目有[Babel](https://github.com/babel/babel/tree/master/packages), [React](https://github.com/facebook/react/tree/master/packages), [Angular](https://github.com/angular/angular/tree/master/modules),
+[Ember](https://github.com/emberjs/ember.js/tree/master/packages), [Meteor](https://github.com/meteor/meteor/tree/devel/packages), [Jest](https://github.com/facebook/jest/tree/master/packages), 还有许多其他人开发他们所有的包在单个的仓库中。
 
 **Lerna is a tool that optimizes the workflow around managing multi-package
 repositories with git and npm.**
