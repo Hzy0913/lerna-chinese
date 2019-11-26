@@ -64,27 +64,27 @@ my-lerna-repo/
 
 Lerna中的两个主要命令是`lerna bootstrap`和`lerna publish`。
 
-`bootstrap` 会将仓库中的依赖链接在一起
-will link dependencies in the repo together.
-`publish` will help publish any updated packages.
+`bootstrap` 会将仓库中的依赖链接在一起。`publish` 用来帮助发布以及更新包。
 
-### What can't Lerna do?
+### 什么是 Lerna 不能做的呢?
+
+Lerna不是无服务器monorepos的部署工具。Hoisting可能与传统的无服务器单仓库(monorepo)部署技术不兼容。
 
 Lerna is not a deployment tool for serverless monorepos. Hoisting might be incompatible with traditional serverless monorepo deployment techniques.
 
-## Getting Started
+## 起步
 
-> The instructions below are for Lerna 3.x.
-> We recommend using it instead of 2.x for a new Lerna project.
+> 下面的说明是针对Lerna 3.x的。
+> 我们建议在新的Lerna项目中使用它而不是2.x版本。
 
+让我们从使用[npm]（https://www.npmjs.com/）将Lerna安装为项目的开发依赖项开始。 
 Let's start by installing Lerna as a dev dependency of your project with [npm](https://www.npmjs.com/).
 
 ```sh
 $ mkdir lerna-repo && cd $_
 $ npx lerna init
 ```
-
-This will create a `lerna.json` configuration file as well as a `packages` folder, so your folder should now look like this:
+这将会创建一个`lerna.json`的配置文件和一个`packages`文件夹，所以你的文件夹现在会是下面这样：
 
 ```
 lerna-repo/
