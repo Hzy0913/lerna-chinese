@@ -46,9 +46,9 @@
 
 Lerna还可以减少开发和构建环境中处理许多副本包的时间和空间—通常将一个项目分成许多不同的NPM包是有缺点的。详见[hoist documentation](doc/hoist.md)。
 
-### What does a Lerna repo look like?
+### 一个 Lerna 的仓库看起来是什么样的?
 
-There's actually very little to it. You have a file structure that looks like this:
+其实没什么特殊的。你的文件结构可能就像下面这样:
 
 ```
 my-lerna-repo/
@@ -60,11 +60,12 @@ my-lerna-repo/
       package.json
 ```
 
-### What can Lerna do?
+### Lerna 能做什么呢?
 
-The two primary commands in Lerna are `lerna bootstrap` and `lerna publish`.
+Lerna中的两个主要命令是`lerna bootstrap`和`lerna publish`。
 
-`bootstrap` will link dependencies in the repo together.
+`bootstrap` 会将仓库中的依赖链接在一起
+will link dependencies in the repo together.
 `publish` will help publish any updated packages.
 
 ### What can't Lerna do?
