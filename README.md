@@ -70,15 +70,12 @@ Lerna中的两个主要命令是`lerna bootstrap`和`lerna publish`。
 
 Lerna不是无服务器monorepos的部署工具。Hoisting可能与传统的无服务器单仓库(monorepo)部署技术不兼容。
 
-Lerna is not a deployment tool for serverless monorepos. Hoisting might be incompatible with traditional serverless monorepo deployment techniques.
-
 ## 起步
 
 > 下面的说明是针对Lerna 3.x的。
 > 我们建议在新的Lerna项目中使用它而不是2.x版本。
 
-让我们从使用[npm]（https://www.npmjs.com/）将Lerna安装为项目的开发依赖项开始。 
-Let's start by installing Lerna as a dev dependency of your project with [npm](https://www.npmjs.com/).
+让我们从使用[npm](https://www.npmjs.com/)将Lerna安装为项目的开发依赖项开始。 
 
 ```sh
 $ mkdir lerna-repo && cd $_
@@ -93,15 +90,15 @@ lerna-repo/
   lerna.json
 ```
 
-## How It Works
+## 它如何工作
 
-Lerna allows you to manage your project using one of two modes: Fixed or Independent.
+Lerna 允许你使用两种模式之一来管理项目：固定模式或独立模式。 
 
-### Fixed/Locked mode (default)
+### 固定/锁定 模式 (默认)
 
-Fixed mode Lerna projects operate on a single version line. The version is kept in the `lerna.json` file at the root of your project under the `version` key. When you run `lerna publish`, if a module has been updated since the last time a release was made, it will be updated to the new version you're releasing. This means that you only publish a new version of a package when you need to.
+固定模式的 Lerna 项目在单个版本线上运行。版本会保存在项目根目录下的`lerna.json`文件中的`version`中。当你执行`lerna publish`时, 如果模块自上次发布后有过更新过, 它将为你更新要发布的新版本号. 这意味着你只在需要时才发布包的新版本。
 
-This is the mode that [Babel](https://github.com/babel/babel) is currently using. Use this if you want to automatically tie all package versions together. One issue with this approach is that a major change in any package will result in all packages having a new major version.
+这是[Babel](https://github.com/babel/babel)目前正在使用的模式. 如果你要自动的将所有包版本捆绑在一起，可使用该模式。但这种存在一个问题是，任何包中的主版本更改都将导致所有包生成一个新的主版本号。 
 
 ### Independent mode
 
