@@ -100,11 +100,11 @@ Lerna 允许你使用两种模式之一来管理项目：固定模式或独立�
 
 这是[Babel](https://github.com/babel/babel)目前正在使用的模式. 如果你要自动的将所有包版本捆绑在一起，可使用该模式。但这种存在一个问题是，任何包中的主版本更改都将导致所有包生成一个新的主版本号。 
 
-### Independent mode
+### 独立模式
 
 `lerna init --independent`
 
-Independent mode Lerna projects allows maintainers to increment package versions independently of each other. Each time you publish, you will get a prompt for each package that has changed to specify if it's a patch, minor, major or custom change.
+独立模式的Lerna项目允许维护人员独立地递增每个包版本号。每次发布时，都会提示您输入这些已修改过的包，以指定它是修订号(patch)、次版本号(minor)、主版本号(major)还是自定义更改。 
 
 Independent mode allows you to more specifically update versions for each package and makes sense for a group of components. Combining this mode with something like [semantic-release](https://github.com/semantic-release/semantic-release) would make it less painful. (There is work on this already at [atlassian/lerna-semantic-release](https://github.com/atlassian/lerna-semantic-release)).
 
